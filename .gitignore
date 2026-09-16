@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+npm-debug.log*
+.vite/
+release/
+*.zip
+神绘简历-一键安装版/

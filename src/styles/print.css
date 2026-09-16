@@ -1,0 +1,75 @@
+/* ============ 神绘简历 · 打印样式（导出 PDF 的核心） ============ */
+/* 打印时：隐藏编辑区与工具栏，仅输出简历页面本身 */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    height: auto !important;
+    background: #fff !important;
+  }
+
+  .editor-panel,
+  .preview-toolbar,
+  .editor-hint {
+    display: none !important;
+  }
+
+  .app-shell {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .preview-panel {
+    display: block !important;
+    height: auto !important;
+    background: #fff !important;
+  }
+
+  .preview-scroll {
+    display: block !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  .page-a4 {
+    width: 210mm !important;
+    min-height: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 14mm 16mm !important;
+  }
+
+  /* 侧栏模板负外边距在打印时改为内部布局，避免溢出 */
+  .modern-side,
+  .colorside-side {
+    margin: 0 !important;
+  }
+
+  /* 避免分页把条目截断：条目尽量保持完整 */
+  .classic-entry,
+  .modern-entry,
+  .fresh-entry,
+  .minimal-entry,
+  .colorside-entry,
+  .timeline-item,
+  .banner-entry,
+  .ats-entry,
+  .classic-section,
+  .modern-section,
+  .fresh-card,
+  .minimal-section,
+  .colorside-section,
+  .timeline-section,
+  .banner-section,
+  .ats-section,
+  .classic-cert-item {
+    break-inside: avoid;
+  }
+}
