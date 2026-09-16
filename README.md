@@ -6,6 +6,12 @@
 
 > 🚀 开源项目！欢迎 Star、Fork、提 Issue 或贡献代码（见 [CONTRIBUTING.md](CONTRIBUTING.md)）。
 
+## 🖼️ 界面预览
+
+![主界面](shots/screenshot-main.png)
+
+![模板库](shots/screenshot-templates.png)
+
 ## ✨ 功能特性
 
 - **表单填写**：基本信息 / 工作经历 / 项目经历 / 教育经历 / 专业技能 / 证书荣誉
@@ -24,6 +30,9 @@
 - **部署简单**：纯静态构建产物，或单文件 Node 服务一键运行
 
 ## 🚀 快速开始
+
+> ⚠️ **AI 功能需要 DeepSeek API Key**：自行部署时在 server.mjs 配置 `DEEPSEEK_API_KEY`（所有访问者共享），
+> 或由用户各自在「🤖 AI 助手」页填写自己的 Key。简历编辑/模板/导出等核心功能不依赖 AI。
 
 ### 开发模式
 
